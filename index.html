@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>PacMan - Meszaros Zsolt</title>	
+	<link rel="stylesheet" href="style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	
+</head>
+<body>
+
+	<div id="container">
+        <div id='world'></div>
+		<div id="ghost"></div>
+		<div id="ghost2"></div>
+		<div id="pacman"></div>
+        <div id="score"></div>
+        <div id="looser"></div>
+	</div>
+	<br>
+	<br>
+	<br>
+    <a class="btn" href="javascript:{}" onclick="start()" onclick="playAudio()">INDÍT</a>
+
+	<audio id="myAudio">
+		Your browser does not support the audio element.
+	  </audio>
+	  <audio id="kaja">
+		<source src="kaja.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	  </audio>
+	  <audio id="gyumi">
+		<source src="gyumi.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	  </audio>
+	<audio id="halal">
+		<source src="halal.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	  </audio>
+	  <h1> <span id="vege"></span></h1>
+	</div>
+		<h1 style="  text-align: right;		margin-top: -50px;">Pontjaid száma: <span id="myText"></span></h1>
+		<h1 style="  text-align: right;		">Életeid száma: <span id="elet"></span></h1>
+
+		<form id="form" onsubmit="return false;" >
+			<br>
+			<input style="position:absolute; top:100%; left:1%; width:40%;" type="text" id="userInput" placeholder="IDE ÍRD A NEVED" />
+
+			Írd be a neved, kezd el a játékot az Indít gombbal. Majd ha végeztél. kattints az ELKÜLDÉS-re
+			<input type="submit" onclick="othername();" />
+			<br>
+			<div id="playerdiv"></div><br>
+			<button onclick="topLista()">Top 10</button>
+			<div id="lsplayerdiv"></div>
+			
+			<p id="list"></p>
+
+		</form>
+
+
+</body>
+    <script src="kod.js"></script>
+
+</html>

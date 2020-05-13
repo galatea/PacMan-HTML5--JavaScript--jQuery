@@ -1,0 +1,73 @@
+    /* All of our CSS code goes here... */
+    * { 
+        /*outline: 1px dotted purple; */
+    }
+#gamearea {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+
+}
+
+
+    .wall {
+        width: 50px;
+        height: 50px;
+        background-image: url('wall.png');
+        display: inline-block;
+    }
+    .coin {
+        width: 50px;
+        height: 50px;
+        background-image: url('coin.png');
+        display: inline-block;
+    }
+    .cherry {
+        width: 50px;
+        height: 50px;
+        background-color: purple;
+        display: inline-block;
+    }
+    .ground {
+        width: 50px;
+        height: 50px;
+        background-image: url('bg.png');
+        display: inline-block;
+    }
+    div#ghost {
+         background-repeat: no-repeat;
+        background-position: center;
+
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background-image: url('ghost1.png');
+    }
+    div#ghost2 {
+        background-repeat: no-repeat;
+       background-position: center;
+
+       width: 50px;
+       height: 50px;
+       position: absolute;
+       background-image: url('ghost1.png');
+   }
+
+
+    div#pacman {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 75% 75%;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background-image: url('pacman.png');
+    }
+
+    div {
+        line-height: 0px;
+    }
+
+    
+
